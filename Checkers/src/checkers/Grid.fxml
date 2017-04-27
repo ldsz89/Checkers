@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkers.GridController">
+   <children>
+      <MenuBar fx:id="menubar">
+        <menus>
+          <Menu mnemonicParsing="false" text="Grid">
+            <items>
+              <MenuItem id="16 x 16" mnemonicParsing="false" onAction="#selectSize" text="16 x16" />
+                  <MenuItem id="10 x 10" mnemonicParsing="false" onAction="#selectSize" text="10 x 10" />
+                  <MenuItem id="8 x 8" mnemonicParsing="false" onAction="#selectSize" text="8 x 8" />
+                  <MenuItem id="3 x 3" mnemonicParsing="false" onAction="#selectSize" text="3 x 3" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Colors">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleColorDefault" text="Default" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleColorBlue" text="Blue" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <StackPane fx:id="stackpane" prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
